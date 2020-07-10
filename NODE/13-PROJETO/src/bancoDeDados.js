@@ -6,7 +6,7 @@ const sequence = {
 const produtos = {}
 
 function salvarProduto(produto) {
-    if (!produto.id) produto.id = sequence.id //adociona o id caso nao tenha
+    if (!produto.id) produto.id = sequence.id //adiciona o id caso nao tenha
     produtos[produto.id] = produto
     return produto
 }
