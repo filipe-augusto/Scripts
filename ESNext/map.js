@@ -15,11 +15,11 @@ chavesVariadas.forEach((vl,ch)=>{
     console.log(ch,vl)
 })
 
-console.log(chavesVariadas.has(123))
-chavesVariadas.delete(123)
+console.log(chavesVariadas.has(123))//ta presente
+chavesVariadas.delete(123) //exclui
 console.log(chavesVariadas.has(123))
 console.log(chavesVariadas.size)
 chavesVariadas.set(123,'a')
-chavesVariadas.set(123,'b')
+chavesVariadas.set(123,'b')//nao pode ter chaves duplicadas
 chavesVariadas.set(456,'b')
 console.log(chavesVariadas)
