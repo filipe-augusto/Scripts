@@ -1,0 +1,1 @@
+{"nome":"nome","preco":12.98,"desconto":0.15,"loja":"Bras Roupas"}
