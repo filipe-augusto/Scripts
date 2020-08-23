@@ -1,7 +1,6 @@
-const { entries } = require("lodash")
 
 //percorre pelo valor
-for(let letra of "Cod3er"){
+for(let letra of "Cod3er"){//percorre pelo valor
     console.log(letra)
 }
 const assuntosEcma = ['Map','Set','Promisse']
@@ -27,11 +26,11 @@ for(let chave of assuntosMap.keys()){//chave
     console.log(chave)
 }
 
-for(let valor of assuntosMap.values()){
+for(let valor of assuntosMap.values()){//valor
     console.log(valor)
 }
 
-for(let[ch, vl] of assuntosMap.entries()){
+for(let[ch, vl] of assuntosMap.entries()){//os dois
 console.log(ch,vl)
 }
 const s = new Set(['a','b','c'])
