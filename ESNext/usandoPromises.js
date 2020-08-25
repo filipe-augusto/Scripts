@@ -20,8 +20,8 @@ const getTurma = letra => {
    })
 }
 
-Promise.all([getTurma('A'), getTurma('B'), getTurma('C')])
-.then(turmas => [].concat(...turmas))
+Promise.all([getTurma('A'), getTurma('B'), getTurma('C')]) //passando um array de funções
+.then(turmas => [].concat(...turmas)) 
 .then(alunos =>alunos.map(aluno =>aluno.nome))
 .then(nomes => console.log(nomes))
 getTurma('D').catch(e=> console.log(e.message))
