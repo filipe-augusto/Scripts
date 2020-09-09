@@ -19,18 +19,14 @@ const getTurma = letra => {
     })
 }
 
-/* let nomes = []
-getTurma('A').then(alunos => {
-})
-getTurma('B').then(alunos => {
-    nomes = nomes.concat(alunos.map(a => `B: ${a.nome}`))
-})
-getTurma("C").then(alunos => {
-    nomes = nomes.concat(alunos.map(a => `C: ${a.nome}`))
-    console.log(nomes);
-}) */
+//objetivo de simplificar o uso promises
+let obterAlunos = async()=>{
+    const ta = await getTurma('A')
+    const tb = await getTurma('B')
+    const tc = await getTurma('C')
+    return [].concat(ta, tb, tc)
+    }//retorna um objeto asyncFunction
 
-Promise.all([getTurma('A'), getTurma('B'), getTurma('C')])
-    .then(turmas => [].concat(...turmas))
-    .then(alunos => alunos.map(aluno => aluno.nome))
-    .then(x => console.log(x))
+   obterAlunos()
+   .then(alunos =>alunos.map(a=>a.nome))
+   .then(nomes => console.log(nomes)) 
