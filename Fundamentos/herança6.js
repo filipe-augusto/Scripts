@@ -34,5 +34,3 @@ cao.familia = 'canidae'
 cao.genero = 'canis'
 cao.especie = 'canis familie' 
 console.log(cao);
-
-

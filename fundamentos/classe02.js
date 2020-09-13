@@ -17,4 +17,4 @@ class Filho extends Pai{
 }
 const filho = new Filho
 console.log(filho)
-19:46 26/05/2020
+
